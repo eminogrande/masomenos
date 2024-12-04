@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#1C1B1F] text-white;
+}
+
+.token-card {
+  @apply flex items-center justify-between p-4 rounded-xl bg-[#2A2A2D] hover:bg-[#323236] transition-colors;
+}
+
+.action-button {
+  @apply flex flex-col items-center justify-center gap-2 p-4 rounded-xl bg-[#2A2A2D] hover:bg-[#323236] transition-colors text-purple-400;
+}
+
+.primary-button {
+  @apply w-full py-3 px-4 bg-purple-600 text-white rounded-xl hover:bg-purple-700 transition-colors disabled:bg-gray-600 disabled:cursor-not-allowed flex items-center justify-center gap-2;
+}
