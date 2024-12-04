@@ -1,14 +1,12 @@
 import { Buffer } from 'buffer';
-import * as process from 'process';
 
 declare global {
   interface Window {
-    Buffer: typeof Buffer;
-    process: typeof process;
+    global: any;
   }
 }
 
-window.Buffer = Buffer;
-window.process = process as any;
+window.global = window;
+window.global.Buffer = Buffer;
 
 export {};
